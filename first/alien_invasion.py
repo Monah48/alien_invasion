@@ -27,16 +27,16 @@ class AlienInvasion:
         while True:
             self._check_events()
 
-        # ПРи каждом проходе цикла перерисовывается экран.
-        self.screen.fill(self.settings.bg_color)
-        self.ship.blitme()
+            # ПРи каждом проходе цикла перерисовывается экран.
+            self.screen.fill(self.settings.bg_color)
+            self.ship.blitme()
 
-        # Отображение последнего прорисованного экрана.
-        pygame.display.flip()
+            # Отображение последнего прорисованного экрана.
+            pygame.display.flip()
 
     def _check_events(self):
         """Обрабатывает нажатия клавиш и события мыши."""
-        for event in pygame.event.het():
+        for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
 
