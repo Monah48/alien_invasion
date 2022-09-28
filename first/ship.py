@@ -20,6 +20,8 @@ class Ship():
         """Обновляет позицию корабля с учетом флага."""
         if self.moving_right:
             self.rect.x += 0.5
+        if self.moving_left:
+            self.rect.x -= 0.5
 
     def blitme(self):
         """Рисует корабль в текущей позиции."""
