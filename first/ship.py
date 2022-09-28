@@ -14,6 +14,7 @@ class Ship():
         self.rect.midbottom = self.screen_rect.midbottom
         #Флаг перемещения
         self.moving_right = False
+        self.moving_left = False
 
     def update(self):
         """Обновляет позицию корабля с учетом флага."""
