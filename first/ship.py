@@ -5,6 +5,7 @@ class Ship():
     def __init__(self, ai_game):
         """Инициализирует корабль и задает его начальную позицию."""
         self.screen = ai_game.screen
+        self.settings = ai_game.settings
         self.screen_rect = ai_game.screen.get_rect()
 
         # загружает изображение корабля и получает прямоугольник.
