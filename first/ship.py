@@ -13,6 +13,8 @@ class Ship():
         self.rect = self.image.get_rect()
         # Каждый новый корабль появляется у нижнего края.
         self.rect.midbottom = self.screen_rect.midbottom
+        # Сохранение вещественной координаты центра корабля.
+        self.x = float(self.rect.x)
         #Флаг перемещения
         self.moving_right = False
         self.moving_left = False
