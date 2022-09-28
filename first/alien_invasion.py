@@ -5,6 +5,7 @@ import pygame
 from settings import Settings
 from ship import Ship
 
+
 class AlienInvasion:
     """Класс для управления ресурсами и поведением игры."""
 
@@ -56,7 +57,8 @@ class AlienInvasion:
         self.screen.fill(self.settings.bg_color)
         self.ship.blitme()
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     # Создание экземпляра и запуск игры.
     ai = AlienInvasion()
     ai.run_game()
