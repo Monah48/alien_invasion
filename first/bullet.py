@@ -25,3 +25,7 @@ class Bullet(Sprite):
         self.y -= self.settings.bullet_speed
         # Обновление позиции прямоугольника
         self.rect.y = self.y
+
+    def draw_bullet(self):
+        """Вывод снаряда на экран"""
+        pygame.draw.rect(self.screen, self.color, self.rect)
