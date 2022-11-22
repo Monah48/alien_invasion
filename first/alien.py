@@ -15,3 +15,6 @@ class Alien(Sprite):
         # Each new alien appears in the upper left corner of the screen
         self.rect.x = self.rect.width
         self.rect.y = self.rect.height
+
+        # Preservation of the exact horizontal position of the alien.
+        self.x = float(self.rect.x)
