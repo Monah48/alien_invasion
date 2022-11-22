@@ -11,3 +11,7 @@ class Alien(Sprite):
         # Loading an Alien Image and assigning a rect attribute
         self.image = pygame.image.load('images/alien_ship.bmp')
         self.rect = self.image.get_rect()
+
+        # Each new alien appears in the upper left corner of the screen
+        self.rect.x = self.rect.width
+        self.rect.y = self.rect.height
