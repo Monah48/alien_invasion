@@ -39,7 +39,9 @@ class AlienInvasion:
         available_space_x = self.settings.screen_width - (2 * alien_width)
         number_aliens_x = available_space_x // (2 * alien_width)
 
-        #
+        # Creation of the first row of aliens.
+        for alien_number in range(number_aliens_x):
+            # 
 
     def run_game(self):
         """Запуск основного цикла игры."""
