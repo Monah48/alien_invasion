@@ -29,6 +29,12 @@ class AlienInvasion:
         # Назначение цвета фона.
         self.bg_color = (230, 230, 230)
 
+    def _create_fleet(self):
+        """Creation of an invasion fleet."""
+        # Alien creation.
+        alien = Alien(self)
+        self.aliens.add(alien)
+
     def run_game(self):
         """Запуск основного цикла игры."""
         while True:
