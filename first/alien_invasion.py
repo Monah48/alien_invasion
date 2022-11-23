@@ -31,9 +31,15 @@ class AlienInvasion:
 
     def _create_fleet(self):
         """Creation of an invasion fleet."""
-        # Alien creation.
+        # Create an alien and calculate the number of aliens in a row.
+        # The interval between neighboring aliens is equal to the width of the
+        # alien.
         alien = Alien(self)
-        self.aliens.add(alien)
+        alien_width = alien.rect.width
+        available_space_x = self.settings.screen_width - (2 * alien_width)
+        number_aliens_x = available_space_x // (2 * alien_width)
+
+        #
 
     def run_game(self):
         """Запуск основного цикла игры."""
